@@ -18,8 +18,19 @@ namespace SeleniumCSV
             driver = new ChromeDriver();
             driver.Navigate().GoToUrl("http://localhost:62625/ReaderPlus/Demo");
             IWebElement fileInput = driver.FindElement(By.CssSelector("#apdf-add-file-demo"));
-            fileInput.SendKeys("C:\\Users\\Administrator\\Desktop\\testFilesPDF\\3.pdf");
+            fileInput.SendKeys("C:\\Users\\william.cheng\\Desktop\\testFilesPDF\\3.pdf");
+
+            CreateForm(driver, 1);
+            pointer(driver);
+            driver.FindElement(By.CssSelector(".formfield")).SendKeys("hello");
         }
+
+        public static void pointer(IWebDriver driver)
+        {
+            WebDriverWait wait = new WebDriverWait(driver, new TimeSpan(0, 0, 5));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.CssSelector("a.apdf-option[title*='Pointer']")));
+        }
+
         public static void CreateForm(IWebDriver driver, int page)
         {
             WebDriverWait wait = new WebDriverWait(driver, new TimeSpan(0, 0, 5));
@@ -36,7 +47,7 @@ namespace SeleniumCSV
             Scroll(driver, pdfPages);
 
             string script = @"
-                    var pageLocation = $("".pdf-page[data-page='" + $"{page}" + @"']"").offset();
+                    var pageLocation = $("".pdf-page[data-page='" + page + @"']"").offset();
 
 
                     var down = jQuery.Event(""mousedown"", {
@@ -59,11 +70,11 @@ namespace SeleniumCSV
 
                     })
 
-                    $("".pdf-page[data-page='" + $"{page}" + @"']"").trigger(down);
+                    $("".pdf-page[data-page='" + page + @"']"").trigger(down);
                     setTimeout( 
                         function(){
-                            $("".pdf-page[data-page='" + $"{page}" + @"']"").trigger(move)
-                            $("".pdf-page[data-page='" + $"{page}" + @"']"").trigger(up)
+                            $("".pdf-page[data-page='" + page  + @"']"").trigger(move)
+                            $("".pdf-page[data-page='" + page + @"']"").trigger(up)
                         }, 500);
                     ";
             js.ExecuteScript(script);

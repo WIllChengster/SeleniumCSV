@@ -1,1 +1,11 @@
 C:\Users\william.cheng\Desktop\SeleniumCSV\SeleniumCSV\bin\Debug\SeleniumCSV.exe.config
+C:\Users\william.cheng\Desktop\SeleniumCSV\SeleniumCSV\bin\Debug\SeleniumCSV.exe
+C:\Users\william.cheng\Desktop\SeleniumCSV\SeleniumCSV\bin\Debug\SeleniumCSV.pdb
+C:\Users\william.cheng\Desktop\SeleniumCSV\SeleniumCSV\bin\Debug\SeleniumExtras.WaitHelpers.dll
+C:\Users\william.cheng\Desktop\SeleniumCSV\SeleniumCSV\bin\Debug\WebDriver.dll
+C:\Users\william.cheng\Desktop\SeleniumCSV\SeleniumCSV\bin\Debug\WebDriver.Support.dll
+C:\Users\william.cheng\Desktop\SeleniumCSV\SeleniumCSV\bin\Debug\WebDriver.xml
+C:\Users\william.cheng\Desktop\SeleniumCSV\SeleniumCSV\bin\Debug\WebDriver.Support.xml
+C:\Users\william.cheng\Desktop\SeleniumCSV\SeleniumCSV\obj\Debug\SeleniumCSV.csprojResolveAssemblyReference.cache
+C:\Users\william.cheng\Desktop\SeleniumCSV\SeleniumCSV\obj\Debug\SeleniumCSV.exe
+C:\Users\william.cheng\Desktop\SeleniumCSV\SeleniumCSV\obj\Debug\SeleniumCSV.pdb
