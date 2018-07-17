@@ -2,10 +2,6 @@
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Microsoft.VisualBasic;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
@@ -38,7 +34,7 @@ namespace SeleniumCSV
             {
                 driver.FindElement(By.CssSelector(".formfield")).SendKeys(numbersArr[i]);
             }
-
+            
         }
 
         //Reads the CSV file and then returns an array of values
